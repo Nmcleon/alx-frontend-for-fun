@@ -15,7 +15,7 @@ def main(markdown_file, output_file):
     else:
         # Placeholder for the conversion logic
         # For now, we'll just print a success message
-        print(f"Conversion from {markdown_file} to {output_file} would proceed here.")
+        # print(f"Conversion from {markdown_file} to {output_file} would proceed here.")
         sys.exit(1)
 
 if __name__ == "__main__":
