@@ -16,7 +16,7 @@ def main(markdown_file, output_file):
         # Placeholder for the conversion logic
         # For now, we'll just print a success message
         print(f"Conversion from {markdown_file} to {output_file} would proceed here.")
-        sys.exit(0)
+        sys.exit(1)
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
