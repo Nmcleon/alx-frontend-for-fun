@@ -596,7 +596,7 @@
 	.post-meta-list [class*='post-meta-'] {
 		margin-bottom: 1rem;
 		padding-bottom: 1rem;
-		border-bottom: 0.2 solid var(--color-grey);
+		border-bottom: 0.2 solid var(--color-light-grey);
 	}
 
 	.post-meta-list [class*='post-mets-']:last-child {
@@ -616,5 +616,9 @@
 	}
 
 	.tag-list li::after {
-		content: "";
+		content: ", ";
 	}
+
+	.tag-list li:last-child::after {
+		content: "";
+	  }
