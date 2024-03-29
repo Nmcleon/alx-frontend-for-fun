@@ -1,0 +1,53 @@
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box1 {
+	background-color: green;
+	width: 5rem;
+	height: 4rem;
+	flex-grow: 1;
+	font-size: 1rem;
+}
+
+.box2 {
+	background-color: dodgerblue;
+	width: 5rem;
+	height: 6rem;
+	flex-grow: 2;
+	font-size: 2rem;
+}
+
+.box3 {
+	background-color: darkblue;
+	width: 5rem;
+	height: 8rem;
+	flex-grow: 3;
+	font-size: 3rem;
+}
+
+.box4 {
+	background-color: violet;
+	width: 5rem;
+	height: 6rem;
+	flex-grow: 2;
+	font-size: 2rem;
+}
+
+.box5 {
+	background-color: orange;
+	width: 5rem;
+	height: 4rem;
+	flex-grow: 1;
+	font-size: 1rem;
+}
