@@ -1,0 +1,22 @@
+h2 a {
+  color: #bb203c;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+
+a::before {
+  position: absolute;
+  content: '';
+  background-color: #bb203c;
+  visibility: hidden;
+  transition: width 0.4s;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+}
+
+a:hover::before {
+  visibility: visible;
+  width: 100%;
+}
