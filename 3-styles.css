@@ -1,0 +1,131 @@
+:root {
+  --bg-color: #e1013c;
+  --hover-color: #fff;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 7rem;
+  z-index: 1000;
+}
+
+.menu-open {
+  visibility: hidden;
+}
+
+.menu-line-1,
+.menu-line-2,
+.menu-line-3 {
+  background-color: var(--hover-color);
+  height: 4px;
+  width: 45%;
+  margin: 0.2rem;
+  transform: rotate(0);
+  transition: transform 0.1s;
+}
+
+.menu-open:checked + .menu-open-button,
+.menu-item {
+  height: 4rem;
+  width: 4rem;
+}
+
+.menu-open-button {
+  flex-direction: column;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%; /* Makes the button circular */
+  background-color: var(--bg-color); /* Adjusted background color */
+}
+
+.menu-open-button:hover {
+  height: 5.5rem;
+  width: 5.5rem;
+}
+
+.menu-open-button,
+.menu-item {
+  background-color: var(--bg-color);
+  border: 1px solid var(--bg-color);
+  border-radius: 50% 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.2rem;
+  position: absolute;
+}
+
+.menu-open-button {
+  top: 0;
+  z-index: 1;
+}
+
+.menu-item {
+  text-decoration: none;
+  top: 0;
+  font-size: 1.4rem;
+  visibility: hidden;
+  transition: top 1s;
+  z-index: 0;
+}
+
+.menu-item:hover {
+  background-color: var(--hover-color);
+}
+
+.menu-item:hover i {
+  color: var(--bg-color);
+}
+
+i {
+  color: var(--hover-color);
+}
+
+.menu-open:checked + .menu-open-button .menu-line-1,
+.menu-open:checked + .menu-open-button .menu-line-3 {
+  transform-origin: left;
+  margin-left: 0.7rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-open:checked + .menu-open-button .menu-line-1 {
+  transform: rotate(45deg);
+}
+
+.menu-open:checked + .menu-open-button .menu-line-3 {
+  transform: rotate(-45deg);
+}
+
+.menu-open:checked + .menu-open-button .menu-line-2 {
+  visibility: hidden;
+}
+
+.menu-open:checked ~ .menu-item {
+  visibility: visible;
+}
+
+.menu-open:checked ~ .menu-item:nth-of-type(1) {
+  top: 5rem;
+}
+
+.menu-open:checked ~ .menu-item:nth-of-type(2) {
+  top: 10rem;
+}
+
+.menu-open:checked ~ .menu-item:nth-of-type(3) {
+  top: 15rem;
+}
+
+.menu-open:checked ~ .menu-item:nth-of-type(4) {
+  top: 20rem;
+}
+
+.menu-open:checked ~ .menu-item:nth-of-type(5) {
+  top: 25rem;
+}
